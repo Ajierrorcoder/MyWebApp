@@ -27,6 +27,6 @@ It features a basic **Sign-In / Sign-Up system**, and allows users to perform fu
 
 ---
 
-## 🖼️ Screenshots
-![Sign-In Page](assets/Signin-page.png)
+## 🖼️ Screenshots are available in assets folder
+
 
