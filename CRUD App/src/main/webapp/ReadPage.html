@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Read Page</title>
+  <style>body {
+      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    table {
+      text-align: center;
+      background-color: white; /* ✅ Changed to white for clear contrast */
+      width: 80%;              /* ✅ Wider table for more data */
+      margin: 20px auto;
+      padding: 20px;
+      box-shadow: 0 0 10px #aaa;
+      border-radius: 10px;
+      border-collapse: collapse; /* ✅ Better borders */
+    }
+
+    th {
+      background-color: #28a745; /* ✅ Nice green header */
+      color: white;
+      padding: 12px;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;  /* ✅ Light grid lines */
+      color: #333;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2; /* ✅ Zebra stripes */
+    }
+
+    tr:hover {
+      background-color: #e0f7fa; /* ✅ Hover effect */
+    }
+    div{text-align: center;}
+  </style>
+</head>
+<body>
+  <h2>Employee Information</h2>
+  <table border="1" id="userTable">
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>EMAIL</th>
+      <th>PHONE</th>
+      <th>ADDRESS</th>
+      <th>ROLE</th>
+    </tr>
+  </table>
+  <div><a href="HomePage.html">Go Back</a></div>
+
+  <script>
+    // Call the servlet that returns JSON
+    fetch('ReadServlet')
+      .then(response => response.json())
+      .then(data => {
+        const table = document.getElementById('userTable');
+
+        data.forEach(user => {
+          const row = table.insertRow();
+          row.insertCell(0).textContent = user.EmpId;
+          row.insertCell(1).textContent = user.fname;
+          row.insertCell(2).textContent = user.email;
+          row.insertCell(3).textContent = user.phone;
+          row.insertCell(4).textContent = user.address;
+          row.insertCell(5).textContent = user.emprole;
+        });
+      })
+      .catch(error => console.error('Error:', error));
+    
+  </script>
+</body>
+</html>

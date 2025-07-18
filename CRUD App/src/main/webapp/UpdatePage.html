@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Details Correction Page</title>
+<style>
+h1 {
+	text-align: center;
+}
+
+.form-box {
+	background-color: pink;
+	width: 400px;
+	margin: 40px auto;
+	padding: 40px;
+	border-radius: 15px;
+	text-align: left;
+}
+
+button {
+	margin-top: 20px;
+}
+
+button:hover {
+	background-color: #ec407a
+}
+</style>
+</head>
+<body>
+	<h1>Details Correction Form</h1>
+	<div class="form-box">
+		<form action="UpdatePageServlet" method="post">
+			<table>
+				<tr>
+					<td><label for="employeeId">EMPLOYEE ID </label></td>
+					<td><input type="text" id="employeeId" name="employeeId" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeName">EMPLOYEE NAME </label></td>
+					<td><input type="text" id="employeeName" name="employeeName" required /></td>
+				</tr>
+				<tr>
+					<td><label for="employeeMail">EMPLOYEE EMAIL ID </label></td>
+					<td><input type="text" id="employeeMail" name="employeeMail" required /></td>
+				</tr>
+				<tr>
+					<td><label for="employeePhno">PHONE NUMBER </label></td>
+					<td><input type="text" id="employeePhno" name="employeePhno" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeAddress">CURRENT ADDRESS </label></td>
+					<td><input type="text" id="employeeAddress"
+						name="employeeAddress" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeRole">EMPLOYEE ROLE </label></td>
+					<td><input type="text" id="employeeRole" name="employeeRole" required/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><button>Update</button></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><a
+							href="HomePage.html" >Go Back</a></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

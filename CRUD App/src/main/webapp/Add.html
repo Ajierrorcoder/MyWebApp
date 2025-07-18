@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+<title>Enter-Employee-Details</title>
+<style type="text/css">
+h1 {
+	text-align: center;
+}
+button:hover{
+background-color: #ec407a;
+}
+.form-box{
+background-color: pink;
+width: 400px;
+margin: 40px auto;
+padding: 40px ;
+box-shadow: 0 0 10px #aaa;
+border-radius: 10px;
+text-align : left;
+}
+table {
+            width: 100%;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #f06292; /* darker pink for button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ec407a;
+        }
+</style>
+</head>
+<body>
+	<h1>Employee Registration Form</h1>
+	<div class ="form-box">
+		<form action="Add" method="post">
+			<table>
+				<tr>
+					<td><label for="employeeName">EMPLOYEE NAME </label></td>
+					<td><input type="text" id="employeeName" name="employeeName" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeMail">EMPLOYEE EMAIL ID </label></td>
+					<td><input type="email" id="employeeMail" name="employeeMail" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeId">EMPLOYEE ID </label></td>
+					<td><input type="text" id="employeeId" name="employeeId" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeePhno">PHONE NUMBER </label></td>
+					<td><input type="number" id="employeePhno" name="employeePhno" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeAddress"> ADDRESS </label></td>
+					<td><input type="text" id="employeeAddress"
+						name="employeeAddress" required/></td>
+				</tr>
+				<tr>
+					<td><label for="employeeRole">EMPLOYEE ROLE </label></td>
+					<td><input type="text" id="employeeRole" name="employeeRole" required/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><button type="submit">REGISTER</button></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><a href="HomePage.html">Go Back</a></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+</body>
+</html>

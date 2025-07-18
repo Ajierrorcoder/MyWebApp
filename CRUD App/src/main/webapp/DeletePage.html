@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete</title>
+<style type="text/css">
+h3 {
+	text-align: center;
+}
+
+.form-box {
+	background-color: pink;
+	width: 350px;
+	margin: auto;
+	padding: 50px;
+	box-shadow: 0 0 10px #aaa;
+	border-radius: 10px;
+
+}
+td{
+margin:20px; 
+}
+
+table {
+	width: 100%;
+}
+td{
+padding:10px;
+}
+label{
+font-weight: bold;
+}
+button:hover{
+background-color: #ec407a
+}
+</style>
+</head>
+<body>
+<div class="form-box">
+<h3>Employee Records Removal</h3>
+	
+	<form action="DeleteServlet" method="post"> 
+	
+		<table>
+			<tr>
+				<td><label for="empID">Enter ID </label></td>
+				<td><input type="text" name="empID" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><button>Delete</button></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center"><a href="HomePage.html">Go Back</a></td>
+			</tr>
+		</table>
+	</form>
+	</div>
+</body>
+</html>

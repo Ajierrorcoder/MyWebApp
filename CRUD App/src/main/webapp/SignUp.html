@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport"
+	content="width=device-width, initial-scale=1,shrink-to-fit=no" />
+<title>Sign Up</title>
+<style>
+.signup-box {
+	width: 600px;
+	margin: 100px auto;
+	padding: 30px;
+	background-color: pink;
+	border-radius: 20px;
+	box-shadow: 0 0 10px #aaa;
+}
+
+table {
+	margin: 0 auto;
+}
+
+td {
+	padding: 10px;
+}
+
+input {
+	padding: 8px;
+	width: 250px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+</style>
+</head>
+<body>
+	<div class="signup-box">
+		<form action="SignUp" method="post">
+			<table>
+				<tr>
+					<td><label for="username">New Username:</label></td>
+					<td><input type="text" id="username" name="username" required></td>
+				</tr>
+				<tr>
+					<td><label for="password">New Password:</label></td>
+					<td><input type="password" id="password" name="password"
+						required></td>
+				</tr>
+				<tr>
+					<td><label for="confirm">Confirm Password:</label></td>
+					<td><input type="password" id="confirm" name="confirm"
+						required></td>
+				</tr>
+				<tr>
+					<td><label for="email">Enter Your Email:</label></td>
+					<td><input type="email" id="email" name="email" required></td>
+				</tr>
+				<tr>
+					<td><label for="role">Enter your Role:</label></td>
+					<td><input type="text" id="role" name="role" required></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="Sign-up" /></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">Already have an account? <a
+						href="index.html">click here</a></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

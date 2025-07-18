@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Portal</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;  /* center horizontally */
+      align-items: center;      /* center vertically */
+      background-color: #f2f2f2; /* Optional background */
+    }
+
+    .home-box {
+      background-color: pink;
+      padding: 40px 60px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      margin-bottom: 50px; /* more space below heading */
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 30px; /* extra spacing between buttons */
+      flex-wrap: wrap;
+      margin-bottom: 30px; /* spacing below buttons before the link */
+    }
+
+    .button-group button {
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      background-color: #ec407a;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .button-group button:hover {
+      background-color: #d81b60;
+    }
+
+    .link-below {
+      font-size: 19px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="home-box">
+    <h1>Welcome To Admin Portal</h1>
+    <div class="button-group">
+      <button onclick="window.location.href='Add.html'">ADD</button>
+      <button onclick="window.location.href='ReadPage.html'">DISPLAY</button>
+      <button onclick="window.location.href='UpdatePage.html'">UPDATE</button>
+      <button onclick="window.location.href='DeletePage.html'">DELETE</button>
+    </div>
+    <div class="link-below">
+      <a href="index.html">Sign-off</a>
+    </div>
+  </div>
+</body>
+</html>
